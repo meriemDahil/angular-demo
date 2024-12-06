@@ -1,0 +1,18 @@
+
+<div>
+    <h4>A quelle heure vous voulez prendre le rdv</h4>
+    <h4>recevoir une notifications d'appele</h4> 
+    <h4>choisir a quelle heure </h4> 
+    <input type="text"  placeholder="less then 24">
+    <ul>
+      <li *ngFor="let rdv of rendezvous">
+        <p><strong>Professional:</strong> {{ rdv.professional }}</p>
+        <p><strong>Date:</strong> {{ rdv.date }}</p>
+        <p><strong>Time:</strong> {{ rdv.time }}</p>
+        <button (click)="selectRendezvous(rdv)">Select</button>
+      </li>
+    </ul>
+    <!-- <button class="btn-confirmation" (click)="showConfiration()">
+        Confirmation 
+    </button> -->
+</div>

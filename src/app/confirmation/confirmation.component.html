@@ -1,0 +1,13 @@
+<div>
+  <h4>Confirmer mon rendez-vous</h4>
+  <div class="form-group">
+    <label for="confirmation">Confirmation</label>
+     <input
+      type="text"
+      id="confirmation"
+      #confirmationInput
+      (change)="checkConfirmation(confirmationInput.value)" 
+      class="form-control"
+    />
+  </div>
+</div>
